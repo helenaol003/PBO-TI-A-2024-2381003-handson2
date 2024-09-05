@@ -1,10 +1,8 @@
 package latihan;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
-public class Soal1 {
+public class Soal2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -14,13 +12,17 @@ public class Soal1 {
         System.out.println("Masukkan angka kedua : ");
         int angka2 = input.nextInt();
 
-        int bigger;
-        if (angka1 > angka2){
-            bigger = angka1;
-        } else {
-            bigger = angka2;
-        }
+        System.out.println("Masukkan angka kedua : ");
+        int angka3 = input.nextInt();
 
+        int bigger;
+        if (angka1 > angka2 && angka1 > angka3){
+            bigger = angka1;
+        } else if (angka2 > angka1 && angka2 > angka3){
+            bigger = angka2;
+        } else {
+            bigger = angka3;
+        }
         System.out.println("Angka terbesar adalah : " + bigger);
     }
 }
